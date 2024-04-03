@@ -32,7 +32,7 @@
             </div>
 
             <!-- Tasks -->
-            <div class="tasks">
+            <div v-if="todos.length > 0" class="tasks">
                 <!-- Single task -->
                 <div v-for="todo, index in todos" class="task">
                     <span @click="toggleDone(index)" :class="{'is-done': todo.done}">{{ todo.text }}</span>
@@ -41,8 +41,9 @@
                         <i class="fa-solid fa-xmark"></i>
                     </span>
                 </div>
-
             </div>
+
+            <div v-else>Non ci sono task. Puoi aggiungere una nuova task usando il form qui sopra</div>
         </main>
     </div>
 
