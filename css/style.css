@@ -1,0 +1,62 @@
+body {
+    font-family: 'Lato';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header .logo {
+    text-align: center;
+    padding: 20px 0;
+}
+header .logo img {
+    width: 300px;
+}
+
+/* MAIN */
+/* User inputs */
+.user-inputs {
+    text-align: center;
+}
+.user-inputs input {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 300px;
+}
+.user-inputs button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Tasks */
+.tasks {
+    background-color: #edebeb;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 25px;
+}
+.task {
+    font-size: 25px;
+    padding: 7px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+.delete {
+    cursor: pointer;
+}
+.is-done {
+    text-decoration: line-through;
+}
